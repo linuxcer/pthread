@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASM	string.c	9;"	d	file:
+JOS_INC_STRING_H	string.h	2;"	d
+JOS_INC_THREADQ_H	threadq.h	2;"	d
+JOS_INC_TYPES_H	types.h	2;"	d
+LWIP_ARCH_THREAD_H	thread.h	2;"	d
+MAX	types.h	38;"	d
+MIN	types.h	32;"	d
+NULL	types.h	5;"	d
+ROUNDDOWN	types.h	47;"	d
+ROUNDUP	types.h	53;"	d
+THREAD_NUM_ONHALT	threadq.h	8;"	d
+alloc_tid	thread.c	/^alloc_tid(void) {$/;"	f	file:
+bool	types.h	/^typedef int bool;$/;"	t
+cur_tc	thread.c	/^static struct thread_context *cur_tc;$/;"	v	typeref:struct:thread_context	file:
+int16_t	types.h	/^typedef short int16_t;$/;"	t
+int32_t	types.h	/^typedef int int32_t;$/;"	t
+int8_t	types.h	/^typedef __signed char int8_t;$/;"	t
+intptr_t	types.h	/^typedef int32_t intptr_t;$/;"	t
+kill_queue	thread.c	/^static struct thread_queue kill_queue;$/;"	v	typeref:struct:thread_queue	file:
+main	serv.c	/^main(int argc, char **argv)$/;"	f
+max_tid	thread.c	/^static thread_id_t max_tid;$/;"	v	file:
+memcmp	string.c	/^memcmp(const void *v1, const void *v2, size_t n)$/;"	f
+memcpy	string.c	/^memcpy(void *dst, void *src, size_t n)$/;"	f
+memfind	string.c	/^memfind(const void *s, int c, size_t n)$/;"	f
+memmove	string.c	/^memmove(void *dst, const void *src, size_t n)$/;"	f
+memset	string.c	/^memset(void *v, int c, size_t n)$/;"	f
+name_size	threadq.h	/^enum { name_size = 32 };$/;"	e	enum:__anon1
+offsetof	types.h	60;"	d
+physaddr_t	types.h	/^typedef uint32_t physaddr_t;$/;"	t
+ppn_t	types.h	/^typedef uint32_t ppn_t;$/;"	t
+print_jb	thread.c	/^print_jb(struct thread_context *tc) {$/;"	f	file:
+stack_size	threadq.h	/^enum { stack_size = 4096 };$/;"	e	enum:__anon2
+strcat	string.c	/^strcat(char *dst, const char *src)$/;"	f
+strchr	string.c	/^strchr(const char *s, char c)$/;"	f
+strcmp	string.c	/^strcmp(const char *p, const char *q)$/;"	f
+strcpy	string.c	/^strcpy(char *dst, const char *src)$/;"	f
+strfind	string.c	/^strfind(const char *s, char c)$/;"	f
+strlcpy	string.c	/^strlcpy(char *dst, const char *src, size_t size)$/;"	f
+strlen	string.c	/^strlen(const char *s)$/;"	f
+strncmp	string.c	/^strncmp(const char *p, const char *q, size_t n)$/;"	f
+strncpy	string.c	/^strncpy(char *dst, const char *src, size_t size) {$/;"	f
+strnlen	string.c	/^strnlen(const char *s, size_t size)$/;"	f
+strtol	string.c	/^strtol(const char *s, char **endptr, int base)$/;"	f
+tc_arg	threadq.h	/^    uint32_t		tc_arg;$/;"	m	struct:thread_context
+tc_entry	threadq.h	/^    void		(*tc_entry)(uint32_t);$/;"	m	struct:thread_context
+tc_jb	threadq.h	/^    jmp_buf tc_jb; \/\/add$/;"	m	struct:thread_context
+tc_name	threadq.h	/^    char 		tc_name[name_size];$/;"	m	struct:thread_context
+tc_nonhalt	threadq.h	/^    int			tc_nonhalt;$/;"	m	struct:thread_context
+tc_onhalt	threadq.h	/^    void		(*tc_onhalt[THREAD_NUM_ONHALT])(thread_id_t);$/;"	m	struct:thread_context
+tc_queue_link	threadq.h	/^    struct thread_context *tc_queue_link;$/;"	m	struct:thread_context	typeref:struct:thread_context::thread_context
+tc_stack_bottom	threadq.h	/^    void		*tc_stack_bottom;$/;"	m	struct:thread_context
+tc_tid	threadq.h	/^    thread_id_t		tc_tid;$/;"	m	struct:thread_context
+tc_wait_addr	threadq.h	/^    volatile uint32_t	*tc_wait_addr;$/;"	m	struct:thread_context
+tc_wakeup	threadq.h	/^    volatile char	tc_wakeup;$/;"	m	struct:thread_context
+thread_clean	thread.c	/^thread_clean(struct thread_context *tc) {$/;"	f	file:
+thread_context	threadq.h	/^struct thread_context {$/;"	s
+thread_create	thread.c	/^thread_create(thread_id_t *tid, const char *name, $/;"	f
+thread_entry	thread.c	/^thread_entry(void) {$/;"	f	file:
+thread_halt	thread.c	/^thread_halt() {$/;"	f
+thread_id	thread.c	/^thread_id(void) {$/;"	f
+thread_id_t	thread.h	/^typedef uint32_t thread_id_t;$/;"	t
+thread_init	thread.c	/^thread_init(void) {$/;"	f
+thread_onhalt	thread.c	/^thread_onhalt(void (*fun)(thread_id_t)) {$/;"	f
+thread_queue	thread.c	/^static struct thread_queue thread_queue;$/;"	v	typeref:struct:thread_queue	file:
+thread_queue	threadq.h	/^struct thread_queue$/;"	s
+thread_set_name	thread.c	/^thread_set_name(struct thread_context *tc, const char *name)$/;"	f	file:
+thread_wait	thread.c	/^thread_wait(volatile uint32_t *addr, uint32_t val, uint32_t msec) {$/;"	f
+thread_wakeup	thread.c	/^thread_wakeup(volatile uint32_t *addr) {$/;"	f
+thread_wakeups_pending	thread.c	/^thread_wakeups_pending(void)$/;"	f
+thread_yield	thread.c	/^thread_yield(void) {$/;"	f
+threadq_init	threadq.h	/^threadq_init(struct thread_queue *tq)$/;"	f
+threadq_pop	threadq.h	/^threadq_pop(struct thread_queue *tq)$/;"	f
+threadq_push	threadq.h	/^threadq_push(struct thread_queue *tq, struct thread_context *tc)$/;"	f
+tmain	serv.c	/^tmain(uint32_t arg) {$/;"	f	file:
+tq_first	threadq.h	/^    struct thread_context *tq_first;$/;"	m	struct:thread_queue	typeref:struct:thread_queue::thread_context
+tq_last	threadq.h	/^    struct thread_context *tq_last;$/;"	m	struct:thread_queue	typeref:struct:thread_queue::thread_context
+uint16_t	types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	types.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8_t	types.h	/^typedef unsigned char uint8_t;$/;"	t
+uintptr_t	types.h	/^typedef uint32_t uintptr_t;$/;"	t
